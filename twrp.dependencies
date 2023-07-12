@@ -1,8 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "dblenk-project/kernel_xiaomi_fog_header",
-    "target_path": "kernel/xiaomi/fog",
+    "repository": "infinixs5lite/device_xiaomi_fog",
+    "target_path": "device_xiaomi_fog/prebuilt
+/kernel",
     "revision": "lineage-20"
   }
 ]
