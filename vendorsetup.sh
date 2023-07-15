@@ -60,7 +60,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
         export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
         export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
-
+        export OF_FLASHLIGHT_ENABLE=1
+	export OF_FL_PATH1="/system/flashlight"
+	export OF_FL_PATH2=""
 	export OF_PATCH_AVB20=1
     	export FOX_DELETE_AROMAFM=1
     	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
