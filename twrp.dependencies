@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "github",
-    "repository": "dblenk-project/kernel_xiaomi_fog_header",
-    "target_path": "kernel/xiaomi/fog",
-    "revision": "lineage-20"
-  }
-]
