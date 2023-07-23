@@ -70,8 +70,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     	export OF_FBE_METADATA_MOUNT_IGNORE=1
 
         # kernel source to be use when building
-	export FOX_FORCE_PREBUILT_KERNEL=1
-        
+        export OF_FORCE_PREBUILT_KERNEL=1
+	
     	# OTA
     	export OF_KEEP_DM_VERITY=1
     	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=0
