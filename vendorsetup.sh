@@ -68,7 +68,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
     	export FOX_ENABLE_APP_MANAGER=0
     	export OF_FBE_METADATA_MOUNT_IGNORE=1
-
+        export OF_SKIP_FBE_DECRYPTION=1
+	export OF_OTA_RES_DECRYPT=1
+        export OF_USE_GREEN_LED=1
+	export OF_FLASHLIGHT_ENABLE=1
+        export OF_FL_PATH1="/sys/class/leds/led_torch_2"
+	
         # kernel source to be use when building
         export OF_FORCE_PREBUILT_KERNEL=1
 	
