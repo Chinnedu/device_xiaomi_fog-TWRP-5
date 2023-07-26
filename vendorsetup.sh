@@ -74,7 +74,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_FLASHLIGHT_ENABLE=1
         export OF_FL_PATH1="/sys/class/leds/led_torch_2"
 	export FOX_VARIANT=MIUI
-	
+	export OF_LEGACY_PROCESS_FSTAB=1
+ 
         # kernel source to be use when building
         export OF_FORCE_PREBUILT_KERNEL=1
 	
