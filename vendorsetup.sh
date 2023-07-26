@@ -75,8 +75,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format (required for FBE v1)
 	export OF_UNBIND_SDCARD_F2FS=1
 
-	# FBEv2
-	if [ "$FOX_VARIANT" = "FBEv2" ]; then
 	   	export OF_FLASHLIGHT_ENABLE=0
 
 	   	# vanilla build
@@ -87,7 +85,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	   	# dispense with the entire OTA menu
 	   	export OF_DISABLE_OTA_MENU=1
-	else # FBEv1
+     
 	   	# prevent MIUI from overwriting OrangeFox
 	   	export OF_PATCH_AVB20=1
 
